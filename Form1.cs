@@ -38,5 +38,10 @@ namespace Bai9_TinhDienTichChuViHinhTron
 
             }
         }
+
+        private void trbTinh_Scroll(object sender, EventArgs e)
+        {
+            txtSo.Text = trbTinh.Value.ToString();
+        }
     }
 }

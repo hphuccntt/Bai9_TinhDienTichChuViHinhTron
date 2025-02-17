@@ -37,7 +37,9 @@
             this.rdbDT = new System.Windows.Forms.RadioButton();
             this.lblKQ = new System.Windows.Forms.Label();
             this.txtKQ = new System.Windows.Forms.TextBox();
+            this.trbTinh = new System.Windows.Forms.TrackBar();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trbTinh)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,7 +82,7 @@
             // 
             this.groupBox1.Controls.Add(this.rdbCV);
             this.groupBox1.Controls.Add(this.rdbDT);
-            this.groupBox1.Location = new System.Drawing.Point(280, 30);
+            this.groupBox1.Location = new System.Drawing.Point(539, 30);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(212, 131);
             this.groupBox1.TabIndex = 3;
@@ -125,11 +127,22 @@
             this.txtKQ.Size = new System.Drawing.Size(100, 20);
             this.txtKQ.TabIndex = 5;
             // 
+            // trbTinh
+            // 
+            this.trbTinh.LargeChange = 2;
+            this.trbTinh.Location = new System.Drawing.Point(204, 30);
+            this.trbTinh.Maximum = 100;
+            this.trbTinh.Name = "trbTinh";
+            this.trbTinh.Size = new System.Drawing.Size(235, 45);
+            this.trbTinh.TabIndex = 6;
+            this.trbTinh.Scroll += new System.EventHandler(this.trbTinh_Scroll);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.trbTinh);
             this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.lblKQ);
             this.Controls.Add(this.groupBox1);
@@ -141,6 +154,7 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trbTinh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +171,7 @@
         private System.Windows.Forms.RadioButton rdbDT;
         private System.Windows.Forms.Label lblKQ;
         private System.Windows.Forms.TextBox txtKQ;
+        private System.Windows.Forms.TrackBar trbTinh;
     }
 }
 
